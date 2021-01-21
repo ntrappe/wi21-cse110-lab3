@@ -1,6 +1,7 @@
 # Standup Notes
 
 ### Daily Scrum
+##### Thursday, Jan 21, 2021
 - What did you do yesterday?
 - What will you do today?
    - transition from internal to external CSS (lab2 had a lot)
