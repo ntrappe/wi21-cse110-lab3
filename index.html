@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSE Interview Prep</title>
+  <meta name="description" content="CSE Interview Prep">
+  <meta name="keywords" content="HTML,CSE110,UCSD">
+  <meta name="author" content="Nicole Trappe">
+  
+  <style>
+  body { 
+    font-family: "ibm plex sans";
+    padding: 10px;
+  }
+
+  code {
+    font-family: menlo;
+    color: rgb(58, 58, 58);
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 100%;
+  }
+
+  button {
+    font-family: ibm plex sans;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2B4674;
+    padding: 5px;
+  }
+
+  nav {
+    background-color: #eeeeee;
+    color: #0d6342;
+    padding: 5px;
+  }
+
+  
+  h1 {
+    color: #0d6342;
+    font-size: 30px;
+  }
+
+  h2 {
+    color: #2B4674;
+    font-size: 24px;
+  }
+
+  h3 {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  h4 {
+    color: #30C886;
+    font-size: 12px;
+  }
+
+  main { font-size: 10px; }
+
+  section {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  table {
+    font-family: ibm plex sans;
+    border-collapse: collapse;
+    width: 50%;
+    font-size: 14px;;
+  }
+
+  th {
+    border: 2px solid #eeeeee;
+    text-align: left;
+    padding: 5px;
+  }
+    
+  td {
+    border: 2px solid #eeeeee;
+    text-align: left;
+    padding: 10px;
+  }
+</style>
+</head>
+
+<!-- ACTUAL PAGE CONTENT-->
+<body> 
+  <header>
+    <picture> <!-- RESIZES TO FIT PAGE DYNAMICALLY -->
+      <source srcset="header.png">
+      <img src="header.png" alt="Header Image" style="width: 100%">
+    </picture>
+  </header>
+
+  <!-- SITE TITLE -->
+  <h1>CSE Interview Prep</h1>
+
+  <nav>
+    <h3>&nbsp; Table of Contents:</h3>
+    &nbsp; <a href="#DataStructures">Data Structures</a> <br/>
+    &nbsp; <a href="#ProgrammingLanguages">Programming Languages</a> <br/>
+    &nbsp; <a href="#SortingAlgorithms">Sorting Algorithms</a> <br/>
+    &nbsp; <a href="#MachineLearning">Machine Learning</a> <br/>
+    &nbsp; <a href="#Survey">Survey/HTML Form</a> <br/>
+    &nbsp; <a href="#Random">Random/Audio+Video</a> <br/><br/>
+  </nav> <br/>
+
+  <!-- THIS IS A GREEN LINE-->
+  <svg width="1500" height="5">
+    <rect width="1500" height="5" style="fill:#30C886" />
+  </svg>
+
+  <main>
+    <!-- SECTION ON DATA STRUCTURES -->
+    <section><a name="DataStructures"><h2>Data Structures:</h2></a>
+      
+      <h3>&#128204; <b><mark>BINARY SEARCH TREE</mark></b></h3>
+      <b>Useful for:</b> <br/> Sorting data and everything, including rebalancing, can be done in O(log n). <br/><br/>
+      <b>Notes:</b> <br/> Generally use <i>unique</i> values (don't want duplicates).   <br/> <br/> 
+
+      <table>
+        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <colgroup>
+          <col span="1" style="background-color: #c5d7e2">
+          <col span="2" style="background-color:white">
+        </colgroup>
+        <tr>
+          <th style="background-color: #2B4674"> <p style="color:white;">Operation</p></th> 
+          <th style="background-color: #2B4674"> <p style="color:white;">Average</p></th> 
+          <th style="background-color: #2B4674"> <p style="color:white;">Worst</p></th> 
+        </tr>
+        <tr>
+          <td>Insert</td> 
+          <td>O(log n)</td> 
+          <td>O(n)</td> 
+        </tr>
+        <tr> 
+          <td>Remove</td> 
+          <td>O(log n)</td> 
+          <td>O(n)</td> 
+        </tr>
+        <tr> 
+          <td>Search</td> 
+          <td>O(log n)</td> 
+          <td>O(n)</td> 
+        </tr>  
+      </table> <br/>
+     
+      <!-- button to go see code in github-->
+      <form action="https://github.com/ntrappe/Data_Structures/blob/main/BST.cpp">
+        <button type="submit"> CLICK TO SEE CODE</button>
+      </form> <br/><hr>
+
+      <h3>&#128204; <b><mark>ARRAYS</mark></b></h3>
+      <b>Useful for:</b> <br/> Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. <br/><br/>
+      <b>Notes:</b> <br/> Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full.   <br/> <br/> 
+
+      <table>
+        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <colgroup>
+          <col span="1" style="background-color: #c5d7e2">
+          <col span="2" style="background-color:white">
+        </colgroup> 
+        <tr>
+          <th style="background-color: #2B4674"> <p style="color:white;">Operation</p></th>  
+          <th style="background-color: #2B4674"> <p style="color:white;">Average</p></th> 
+          <th style="background-color: #2B4674"> <p style="color:white;">Worst</p></th> 
+        </tr> 
+        <tr> 
+          <td>Access</td> 
+          <td>O(1)</td> 
+          <td colspan="1">O(1)</td> 
+        </tr>
+        <tr>
+          <td>Append</td> 
+          <td>---</td> 
+          <td colspan="1">O(1)</td>
+        </tr>
+        <tr> 
+          <td>Insert</td> 
+          <td>---</td> 
+          <td>O(n)</td> 
+        </tr>
+        <tr> 
+          <td>Remove</td> 
+          <td>---</td> 
+          <td colspan="1">O(n)</td> 
+        </tr>
+        <tr> 
+          <td>Search</td> 
+          <td>O(n)</td> 
+          <td colspan="1">O(n)</td> 
+        </tr>
+      </table> <br/><hr>
+
+      <h3>&#128204; <b><mark>LINKED-LISTS</mark></b></h3>
+      <b>Useful for:</b> <br/> Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. <br/><br/>
+      <b>Notes:</b> <br/> Singly-linked will save up on space and it's simpler to implement but it can make it more difficult to access previous nodes. Doubly-linked takes up <strong>double</strong> the space since we have 2x the pointers but <strong>easier</strong> to traverse backwards. <br/> <br/> 
+
+      <table>
+          <caption style="text-align:left"><b>Time Complexity:</b></caption>
+          <colgroup>
+            <col span="1" style="background-color: #c5d7e2">
+            <col span="2" style="background-color:white">
+          </colgroup>
+          <tr>  
+            <th style="background-color: #2B4674"> <p style="color:white;">Operation</p></th> 
+            <th style="background-color: #2B4674"> <p style="color:white;">Average</p></th> 
+            <th style="background-color: #2B4674"> <p style="color:white;">Worst</p></th> 
+          </tr> 
+          <tr>  
+            <td>Insert</td>  
+            <td>O(1)</td>   
+            <td colspan="1">O(1)</td>  
+          </tr>   
+          <tr>  
+            <td>Remove</td> 
+            <td>O(n)</td> 
+            <td colspan="1">O(1)</td> 
+          </tr> 
+          <tr> 
+            <td>Search</td> 
+            <td>O(n)</td>   
+            <td colspan="1">O(n)</td>     
+          </tr>
+      </table> <br/>
+    </section>
+
+    <!-- THIS IS A GREEN LINE-->
+    <svg width="1500" height="5">
+      <rect width="1500" height="5" style="fill:#30C886" />
+    </svg>
+
+    <!-- SECTION ON PROGRAMMING LANGS -->
+    <section><a name="ProgrammingLanguages"><h2>Progamming Languages</h2></a>
+    <ol>
+      <li> <strong>C</strong>: Procedural-oriented language; no references (just pointers), no function overloading, + memory management. <br/> <br/>
+        <details>
+          <summary><b>Basic Example:</b></summary>
+            <code>#</code><code style="color:crimson;">include </code> <code style="color:MidnightBlue;">&lt;stdio.h&gt;</code> <br/>
+            <code style="color:crimson;">int</code> <code style="color:SteelBlue;">main()</code> <br/>
+            &nbsp; <code style="color:SteelBlue;">printf</code><code>(</code><code style="color:MidnightBlue;">"Hello World!"</code><code>);</code> <br/>
+            &nbsp; <code style="color:crimson;">return</code> <code style="color:SteelBlue;">0</code>; <br/>
+            <code>}</code>
+        </details> <br/>
+        <details>
+          <summary><b>To Run:</b></summary>
+          <pre>gcc -o hi Helloworld.c</pre><pre>hi</pre>
+        </details> <br/>
+      </li>
+
+      <li>(2) <strong>C++</strong>: Object-oriented language; references, pointers, function overloading + memory management. <br/> <br/>
+        <details>
+          <summary><b>Basic Example:</b></summary>
+          <code>#</code><code style="color:crimson;">include </code><code style="color:MidnightBlue;">&lt;stdio.h&gt;</code> <br/>
+            <code style="color:crimson;">int</code> <code style="color:SteelBlue;">main()</code> <br/>
+            &nbsp; <code>cout &lt;&lt;</code> <code style="color:MidnightBlue;">"Hello World!"</code> <code>&lt;&lt; endl;</code> <br/>
+            &nbsp; <code style="color:crimson;">return</code> <code style="color:SteelBlue;">0</code><code>;</code> <br/>
+            <code>}</code>
+        </details> <br/>
+        <details>
+          <summary><b>To Run:</b></summary>
+          <pre>g++ -o hi Helloworld.c</pre><pre>./hi</pre>
+        </details> <br/>
+      </li> 
+
+      <li> <strong>Python</strong>: Object-oriented/scripting language; pointers, function overloading + automatic garbage collection.<br/> <br/>
+        <details>
+          <summary><b>Basic Example:</b></summary>
+            <code style="color:crimson;">def</code> <code style="color:crimson;">hello</code><code>():</code> <br/>
+            &nbsp; <code style="color:SteelBlue;">print</code><code style="color:MidnightBlue;">("Hello World!)</code><br/>
+            <code style="color:SteelBlue;">hello</code><code>()</code>
+        </details> <br/>
+        <details>
+          <summary><b>To Run:</b></summary>
+          <pre>python Helloworld.py</pre>
+        </details> <br/>
+      </li>  
+
+      <li> <strong>Java</strong>: Object-oriented language; references, method overloading + automatic garbage collection. <br/> <br/>
+        <details>
+          <summary><b>Basic Example:</b></summary>
+            <code style="color:crimson;">public class</code> <code style="color:SteelBlue;">HelloWorld</code><code>{</code> <br/>
+            &nbsp; <code style="color:crimson;">public static void</code> <code style="color:SteelBlue;">main</code>(<code style="color:crimson;">String</code>[]<code style="color:crimson;">args</code>) {<br/>
+            &nbsp; &nbsp; <code>System.out.println(</code><code style="color:MidnightBlue;">"Hello World!"</code><code>);</code> <br/>
+            &nbsp; <code>}</code> <br/>
+          <code>}</code>
+        </details> <br/>
+        <details>
+          <summary><b>To Run:</b></summary>
+          <pre>javac Helloworld.java</pre> <pre>java Helloworld</pre>
+        </details> <br/>
+      </li> 
+
+      <li> <strong> TODO</strong>:
+        <label for="language">Which programming language do you prefer?</label>
+        <input list="languages" name="language" id="language">
+        <datalist id="languages">
+          <option value="C">
+          <option value="C++">
+          <option value="Python">
+          <option value="Java">
+          <option value="HTML">
+          <option value="CSS">
+          <option value="ARM">
+          <option value="Javascript">
+        </datalist> 
+      </li>
+    </ol>
+    </section>
+
+    <!-- THIS IS A GREEN LINE -->
+    <canvas id="myCanvas" width="1500" height="5"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      // Green line (looks same as svg)
+      context.beginPath();
+      context.fillStyle = "#30C886";
+      context.fillRect(0, 0, 10000, 5);   // xoffset, yoffset, width, height
+      context.stroke();
+    </script>
+
+    <!-- SECTION ON SORTING ALGORITHMS -->
+    <section><a name="SortingAlgorithms"><h2>Sorting Algorithms</h2></a>
+      <iframe src="https://www.interviewcake.com/sorting-algorithm-cheat-sheet" height="400" width="800" title="Sorting Algos"></iframe> 
+    </section>
+
+     <!-- THIS IS A GREEN LINE-->
+     <svg width="1500" height="5">
+      <rect width="1500" height="5" style="fill:#30C886" />
+    </svg>
+
+    <section><a name="MachineLearning"><h2>Machine Learning</h2></a>
+      <ul>
+        <li><b>LSTM</b>: an artificial recurrent neural network (RNN) for deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections and can process entire sequences of data (such as speech or video).</li>
+      </ul>  
+      <figure>
+        <img src="LSTM.png" alt="LSTM" style="width:70%">
+        <figcaption>Figure 1: Representation of LSTM with 4 Layers</figcaption>
+      </figure> 
+      <ul>
+        <li><b>KNN</b>: An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors. If k = 1, then the object is simply assigned to the class of that single nearest neighbor.</li>
+      </ul>
+      <figure>
+        <img src="KNN.png" alt="KNN" style="width:70%">
+        <figcaption>Figure 2: Representation of KNN with 3 Classes</figcaption>
+      </figure> 
+      <ul>
+        <li><b>CNN</b>: Versions of multilayer perceptrons (MLPs). They are fully connected networks: each neuron in one layer is connected to all neurons in the next layer. The "fully-connectedness" of these networks makes them prone to overfitting data.</li>
+      </ul>
+      <figure>
+        <img src="CNN.png" alt="CNN" style="width:70%">
+        <figcaption>Figure 3: Representation of CNN with 4 Features</figcaption>
+      </figure> 
+      
+      <aside>
+        <h3>Notes</h3>
+        If you're interested in ML and want to learn more about how <a href="https://github.com/ntrappe/ML-Models/blob/master/K-Means%20Tutorial(1).ipynb">KNNs</a>, CNNs, PCA, etc. work, then check out this <a href="https://github.com/ntrappe/ML-Models">GitHub Repo</a>.
+      </aside>
+    </section>
+
+     <!-- THIS IS A GREEN LINE-->
+     <svg width="1500" height="5">
+      <rect width="1500" height="5" style="fill:#30C886"/>
+    </svg>
+
+    <section><a name="Survey"><h2>Survey/HTML Form Example</h2></a>
+      <!-- TEMPLATE -->
+      <template>
+        https://github.com/ntrappe/cse110_lab2/blob/main/survey.html
+      </template>
+
+      <!-- EXPOSE TEMPLATE-->
+      <p>Click the button below to see the source of the above HTML survey (via template).</p>
+      <button onclick="showContent()">REVEAL LINK TO HTML SURVEY</button><br/><br/>
+      <script>
+        function showContent() {
+          var text = document.querySelector("template").innerHTML;
+          window.alert(text);
+        }
+      </script>
+
+      <object data="survey.html" width="800" height="600"></object>
+
+    </section>
+
+    <!-- THIS IS A GREEN LINE-->
+    <svg width="1500" height="5">
+      <rect width="1500" height="5" style="fill:#30C886"/>
+    </svg>
+
+    <!-- AUDIO AND VIDEO -->
+    <section><a name="Random"><h2>Random/Audio and Video</h2></a>
+      <h3>Video:</h3>If you've been enjoying the illustrations so far, check out this animation I just drew of my friend. <br/>
+      <video width="400" height="400" controls>
+        <source src="santa_lights.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  <br/> <hr> <br/>
+      
+      <h3>Audio:</h3>And here's some audio that fits the theme of the above animation. <br/> <br/>
+      <audio controls>
+        <source src="Christmas.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio> <br/> <hr> <br/>
+      
+      <h3>When the Panic Sets In:</h3>
+      Just in case I forget, these are the programming languages I am fluent in:
+      <ol>
+        <li> Java </li>
+        <li> C/C++ </li>
+        <li> Python </li>
+        <li> ARM </li>
+        <li> Google Scripts </li>
+      </ol> <br/> <hr> <br/>  
+      Just in case I forget, these are the languages I am fluent-ish in:
+      <ul>
+        <li> Spanish </li>
+        <li> English </li>
+        <li> French <em>(barely)</em> </li>
+        <li> Danish </li>
+      </ul>
+    </section>
+    <br/>
+  </main>
+
+  
+  <footer>
+    <img src="footer.jpeg" alt="Footer Image" style="width: 100%">
+  </footer>
+
+</body>
+</html>
