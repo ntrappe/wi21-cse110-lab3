@@ -20,7 +20,15 @@
 - [ ] ID Selector (#id)
 - [ ] Universal Selector (*)
 - [ ] Element Selector (element)
-- [ ] Attribute Selector (e.g. [attribute=foo])
+- [x] Attribute Selector (e.g. [attribute=foo])
+   ```css
+      body[class$="run"] {
+         font-family: menlo;
+         color: rgb(58, 58, 58);
+         background-color: #f1f1f1;
+         padding: 2px;
+      }
+   ```
 - [ ] Pseudo-class Selectors (e.g. p::hover)
 - [ ] Grouping / Combinators
 - [ ] Selector List (element, element)
@@ -33,12 +41,12 @@
 ##### CSS Topics       
 - [ ] Comments
 - Colors
-   - [ ] rgb(r, g, b), rgba(r, g, b, a)
+   - [x] rgb(r, g, b), rgba(r, g, b, a)
    - [ ] #FFF, #FFFFFF
    - [ ] hsl(h, s, l),  hsla(h, s, l, a)
-   - [ ] Color name (i.e ‘green’)
+   - [x] Color name (i.e ‘green’)
 - Backgrounds
-   - [ ] background-color
+   - [x] background-color
 - Borders
    - [ ] border-style
    - [ ] border-color
