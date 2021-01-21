@@ -1,2 +1,2 @@
-# ntrappe.github.io
-CSE 110 Github Pages
+# WI21-CSE110-LAB3
+CSE 110 Lab 3: CSS + Agile
