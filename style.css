@@ -1,0 +1,30 @@
+body {
+  background-color: white;
+}
+
+/* If class EQUALS highlight then background color yellow */
+body[class="highlight"] {
+  background-color: yellow;
+}
+
+/* If class BEGINS with https, color link blue */
+a[href^="https"] {
+  color:rgb(62, 179, 252);
+}
+
+code {
+  font-family: menlo;
+  color: rgb(58, 58, 58);
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 100%;
+}
+
+/* If class ENDS with run, set it up like snippet of code */
+body[class$="run"] {
+  font-family: menlo;
+  color: rgb(58, 58, 58);
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+
