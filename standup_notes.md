@@ -3,12 +3,15 @@
 ### Daily Scrum
 ##### Thursday, Jan 21, 2021
 - What did you do yesterday?
+   - N/A
 - What will you do today?
    - transition from internal to external CSS (lab2 had a lot)
    - use Google Fonts instead of importing via font-family
    - if time allows, set up an external CSS that will do color formatting for diff coding languages
 - Where are you blocked?
 - Comfort Level — How close are we to hitting our sprint goals?
+
+---
 
 ### Work Log
 
