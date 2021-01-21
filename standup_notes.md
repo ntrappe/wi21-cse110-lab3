@@ -42,7 +42,7 @@
 - [ ] Comments
 - Colors
    - [x] rgb(r, g, b), rgba(r, g, b, a)
-   - [ ] #FFF, #FFFFFF
+   - [x] #FFF, #FFFFFF
    - [ ] hsl(h, s, l),  hsla(h, s, l, a)
    - [x] Color name (i.e ‘green’)
 - Backgrounds
@@ -66,7 +66,7 @@
    - [ ] Height / Width
    - [ ] Set the height and width for an element
 - Text
-   - [ ] color
+   - [x] color
    - [ ] text-decoration
    - [ ] text-align
 - Fonts: Include and use a **3rd party** font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS

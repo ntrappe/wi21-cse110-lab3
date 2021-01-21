@@ -28,3 +28,66 @@ body[class$="run"] {
   padding: 2px;
 }
 
+button {
+  font-family: ibm plex sans;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2B4674;
+  padding: 5px;
+}
+
+nav {
+  background-color: #eeeeee;
+  color: #0d6342;
+  padding: 5px;
+}
+
+
+h1 {
+  color: #0d6342;
+  font-size: 30px;
+}
+
+h2 {
+  color: #2B4674;
+  font-size: 24px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 18px;
+}
+
+h4 {
+  color: #30C886;
+  font-size: 12px;
+}
+
+main { 
+  font-size: 10px; 
+}
+
+section {
+  padding: 10px;
+  font-size: 14px;
+}
+
+table {
+  font-family: ibm plex sans;
+  border-collapse: collapse;
+  width: 50%;
+  font-size: 14px;;
+}
+
+th {
+  border: 2px solid #eeeeee;
+  text-align: left;
+  padding: 5px;
+}
+  
+td {
+  border: 2px solid #eeeeee;
+  text-align: left;
+  padding: 10px;
+}
+
