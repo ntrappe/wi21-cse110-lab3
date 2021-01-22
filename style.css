@@ -46,7 +46,7 @@ h3[class="highlight"] {
   color:rgb(216, 216, 216);
   background-color: #063731;
   padding: 5px 5px 3px 10px; /* top right bottom left */
-  margin-left: 5px;   /* space btw edge of page and section */
+  margin-left: 1px;   /* space btw edge of page and section */
   margin-right: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -72,7 +72,6 @@ section[class="dark"] {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
-  font-size: 14px;
   color: rgb(180, 179, 179);
 }
 
@@ -156,19 +155,37 @@ a:active[class~="contents"] {
 table {
   font-family: ibm plex sans;
   border-collapse: collapse;
-  width: 50%;
-  font-size: 14px;;
+  width: 20%;
+  position: static;
 }
 
+caption {
+  margin: 0px 0px 3px 0px; /* top right bottom left */
+  /* BOTTOM */
+}
+
+/* table header */
 th {
-  border: 2px solid #eeeeee;
-  text-align: left;
-  padding: 5px;
+  border-style: solid;
+  border-color: #0B0E11;
+  border-width: 3px;
+  border-radius: 2px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
   
+/* table body */
 td {
-  border: 2px solid #eeeeee;
+  color:rgb(48, 48, 48);
+  border-style: solid;
+  border-color: #0B0E11;
+  border-width: 2px;
+  border-radius: 20px;
   text-align: left;
-  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 

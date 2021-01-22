@@ -73,10 +73,22 @@
 - Backgrounds
    - [x] background-color
 - Borders
-   - [ ] border-style
-   - [ ] border-color
-   - [ ] border-width
-   - [ ] border-radius
+   - [x] border-style
+   - [x] border-color
+   - [x] border-width
+   - [x] border-radius
+  ```css
+   /* table header */
+   th {
+      border-style: solid;
+      border-color: #0B0E11;
+      border-width: 3px;
+      border-radius: 2px;
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+  ```
 - Unit
    - [ ] 3 relative
    - [ ] 3 absolute
@@ -120,7 +132,16 @@
 - Max-width / Min-width
    - [ ] Width has to be variable (like a percentage)
 - Position: Experiment with these attributes and include at least **two** of them in your page.
-   - [ ] static
+   - [x] static
+  ```css
+   /* style of table */
+   table {
+      font-family: ibm plex sans;
+      border-collapse: collapse;
+      width: 20%;
+      position: static;
+   }
+  ```
    - [ ] relative
    - [x] fixed -- Table of Contents
    - [ ] absolute
