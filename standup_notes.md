@@ -82,7 +82,20 @@
    - [ ] 3 absolute
    - [ ] Box Model CSS Box Model
 - Margins
-   - [ ] Long (margin-top, margin-bottom, margin-left, margin-right)
+   - [x] Long (margin-top, margin-bottom, margin-left, margin-right)
+   ```css
+      h3[class="highlight"] {
+         font-family: 'Overpass';
+         font-weight: semi-bold;
+         color:rgb(216, 216, 216);
+         background-color: #063731;
+         padding: 5px 5px 3px 10px; /* top right bottom left */
+         margin-left: 5px;          /* space btw edge of page and section */
+         margin-right: 5px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+   ```
    - [ ] Short (margin: top right bottom left)
    - [ ] auto
 - Padding
