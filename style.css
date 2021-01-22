@@ -1,10 +1,6 @@
-body {
-  background-color: white;
-}
-
 /* If class EQUALS highlight then background color yellow */
 body[class="highlight"] {
-  background-color: yellow;
+  background-color: 2EC987;
 }
 
 /* If class BEGINS with https, color link blue */
@@ -20,12 +16,15 @@ code {
   font-size: 100%;
 }
 
-/* If class ENDS with run, set it up like snippet of code */
-body[class$="run"] {
+/* If class ENDS with run, set it up like snippet of code (no color) */
+code[class$="run"] {
   font-family: menlo;
   color: rgb(58, 58, 58);
   background-color: #f1f1f1;
-  padding: 2px;
+  padding-top: 3px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  padding-left: 15px;
 }
 
 button {
@@ -42,7 +41,6 @@ nav {
   padding: 5px;
 }
 
-
 h1 {
   color: #0d6342;
   font-size: 30px;
@@ -56,6 +54,11 @@ h2 {
 h3 {
   color: #000000;
   font-size: 18px;
+}
+
+h3[class="highlight"] {
+  color: black;
+  background-color: rgb(48, 201, 132);
 }
 
 h4 {
@@ -72,6 +75,47 @@ section {
   font-size: 14px;
 }
 
+/* Table of Contents */
+nav {
+  text-align: left;
+  font-size: 14px;
+  color: white;
+  background-color: #2B3841;
+  border: medium none;
+  border-radius: 0;
+  color: white;
+  list-style: outside none none;
+  margin: 5;
+  padding: 15px 5px 15px 5px;
+  /* floats at the top right of page */
+  position: fixed;    
+  top: 0;
+  right: 0;
+}
+
+
+/* if class CONTAINS contents then make it white-ish for table of contents */
+a[class~="contents"] {
+  color: #c7c7c7;
+  text-decoration: none;
+  margin: 5;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Hover over Table of Contents */
+a:hover[class~="contents"] {
+  color: white;
+  font-weight: bold;
+}
+
+/* Clicked element of Table of Contents */
+a:active[class~="contents"] {
+  color: #30C886;
+  font-weight: bold;
+}
+
+/* style of table */
 table {
   font-family: ibm plex sans;
   border-collapse: collapse;

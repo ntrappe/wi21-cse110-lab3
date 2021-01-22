@@ -5,8 +5,17 @@
   <meta name="description" content="CSE Interview Prep">
   <meta name="keywords" content="CSS,CSE110,UCSD">
   <meta name="author" content="Nicole Trappe">
-  
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: ibm plex sans;
+      color: rgb(58, 58, 58);
+      background-color: #101419;
+      padding: 2px;
+    }
+  </style>
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <!-- ACTUAL PAGE CONTENT-->
@@ -22,14 +31,13 @@
   <h1>CSE Interview Prep</h1>
 
   <nav>
-    <h3>&nbsp; Table of Contents:</h3>
-    &nbsp; <a href="#DataStructures">Data Structures</a> <br/>
-    &nbsp; <a href="#ProgrammingLanguages">Programming Languages</a> <br/>
-    &nbsp; <a href="#SortingAlgorithms">Sorting Algorithms</a> <br/>
-    &nbsp; <a href="#MachineLearning">Machine Learning</a> <br/>
-    &nbsp; <a href="#Survey">Survey/HTML Form</a> <br/>
-    &nbsp; <a href="#Random">Random/Audio+Video</a> <br/><br/>
-  </nav> <br/>
+    <a class="table of contents" href="#DataStructures">Data Structures </a> |
+    <a class="table of contents" href="#ProgrammingLanguages">Programming Languages </a> |
+    <a class="table of contents" href="#SortingAlgorithms"> Sorting Algorithms</a> | 
+    <a class="table of contents" href="#MachineLearning">Machine Learning</a> |
+    <a class="table of contents" href="#Survey">Survey/HTML Form</a> |
+    <a class="table of contents" href="#Random">Random/Audio+Video</a> 
+  </nav> 
 
   <!-- THIS IS A GREEN LINE-->
   <svg width="1500" height="5">
@@ -171,7 +179,8 @@
         </details> <br/>
         <details>
           <summary><b>To Run:</b></summary>
-          <pre>gcc -o hi Helloworld.c</pre><pre>hi</pre>
+          <code class="to run">gcc -o hi Helloworld.c</code> <br/> <br/>
+          <code class="to run">hi</code>
         </details> <br/>
       </li>
 
@@ -186,7 +195,8 @@
         </details> <br/>
         <details>
           <summary><b>To Run:</b></summary>
-          <pre>g++ -o hi Helloworld.c</pre><pre>./hi</pre>
+          <code class="to run">g++ -o hi Helloworld.c</code> <br/> <br/>
+          <code class="to run">./hi</code>
         </details> <br/>
       </li> 
 
@@ -199,7 +209,7 @@
         </details> <br/>
         <details>
           <summary><b>To Run:</b></summary>
-          <pre>python Helloworld.py</pre>
+          <code class="to run">python Helloworld.py</code>
         </details> <br/>
       </li>  
 
@@ -214,7 +224,8 @@
         </details> <br/>
         <details>
           <summary><b>To Run:</b></summary>
-          <pre>javac Helloworld.java</pre> <pre>java Helloworld</pre>
+          <code class="to run">javac Helloworld.java</code> <br/> <br/>
+          <code class="to run">java Helloworld</code>
         </details> <br/>
       </li> 
 
@@ -247,6 +258,11 @@
       context.fillRect(0, 0, 10000, 5);   // xoffset, yoffset, width, height
       context.stroke();
     </script>
+
+
+
+
+
 
     <!-- SECTION ON SORTING ALGORITHMS -->
     <section><a name="SortingAlgorithms"><h2>Sorting Algorithms</h2></a>

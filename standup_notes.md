@@ -61,14 +61,14 @@
    - [ ] Short (margin: top right bottom left)
    - [ ] auto
 - Padding
-   - [ ] Long (padding-top, padding-bottom, padding-left, padding-right)
-   - [ ] Shorthand (padding: top right bottom left)
+   - [x] Long (padding-top, padding-bottom, padding-left, padding-right)
+   - [x] Shorthand (padding: top right bottom left)
    - [ ] Height / Width
    - [ ] Set the height and width for an element
 - Text
    - [x] color
-   - [ ] text-decoration
-   - [ ] text-align
+   - [x] text-decoration -- Table of Contents (in nav)
+   - [x] text-align
 - Fonts: Include and use a **3rd party** font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS
 - Display: Experiment with these types and include at least **two** of them in your page.
    - [ ] none
@@ -80,11 +80,26 @@
 - Position: Experiment with these attributes and include at least **two** of them in your page.
    - [ ] static
    - [ ] relative
-   - [ ] fixed
+   - [x] fixed -- Table of Contents
    - [ ] absolute
    - [ ] sticky 
-   - [ ] :hover (Pseudo-class)
-   - [ ] :active (Pseudo-class)
+   - [x] :hover (Pseudo-class) 
+  ```
+   /* Hover over Table of Contents */
+   a:hover[class~="contents"] {
+      color: white;
+      font-weight: bold;
+   }
+   ```
+   - [x] :active (Pseudo-class)
+   ```
+   /* Clicked element of Table of Contents */
+   a:active[class~="contents"] {
+      color: #30C886;
+      font-weight: bold;
+   }
+
+   ```
 - Flexbox (Links to an external site.)
    - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
 - Grid (Links to an external site.)
