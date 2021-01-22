@@ -84,7 +84,7 @@
    - [ ] absolute
    - [ ] sticky 
    - [x] :hover (Pseudo-class) 
-  ```
+  ```css
    /* Hover over Table of Contents */
    a:hover[class~="contents"] {
       color: white;
@@ -92,13 +92,12 @@
    }
    ```
    - [x] :active (Pseudo-class)
-   ```
+   ```css
    /* Clicked element of Table of Contents */
    a:active[class~="contents"] {
       color: #30C886;
       font-weight: bold;
    }
-
    ```
 - Flexbox (Links to an external site.)
    - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
