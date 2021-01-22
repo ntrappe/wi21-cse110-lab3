@@ -24,6 +24,7 @@
 - What will you do today?
    - all the selectors, display, position, flexbox, and grid
    - have a cool design idea for the earth's layers that could use position
+   - try to do all this work using the Pomodoro Timer too
 - Where are you blocked?
 - Comfort Level — How close are we to hitting our sprint goals?
 
@@ -124,8 +125,30 @@
          margin-bottom: 10px;
       }
    ```
-   - [ ] Short (margin: top right bottom left)
-   - [ ] auto
+   - [x] Short (margin: top right bottom left)
+   ```css
+      code[class$="run"] {
+         font-family: menlo;
+         color: rgb(203, 203, 203);
+         background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+         padding-top: 3px;
+         padding-right: 5px;
+         padding-bottom: 3px;
+         padding-left: 5px;
+         margin: 3px 1px 1px 3px;    /* top right bottom left */
+      }
+   ```
+   - [x] auto
+   ```css
+      code {
+         font-family: menlo;
+         color: rgb(203, 203, 203);
+         background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+         padding: 5px;
+         margin: auto;
+         font-size: 100%;
+      }
+   ```
 - Padding
    - [x] Long (padding-top, padding-bottom, padding-left, padding-right)
    - [x] Shorthand (padding: top right bottom left)

@@ -52,9 +52,27 @@ h3[class="highlight"] {
   margin-bottom: 10px;
 }
 
+/* General text (e.g. describe programming langauges ) */
 h4 {
-  color: #30C886;
-  font-size: 12px;
+  font-family: ibm plex sans;
+  font-weight: normal;
+  color: rgb(179, 179, 179);
+  font-size: 17px;
+}
+
+/* Small heading to label examples (e.g. "To Run..Basic Example...") */
+h5 {
+  font-family: 'Overpass';
+  color: rgb(179, 179, 179);
+  font-size: 15px;
+  margin: 1px 1px 10px 1px; /* top right bottom left */
+}
+
+summary {
+  font-family: 'Overpass';
+  color: rgb(179, 179, 179);
+  font-size: 15px;
+  margin: 1px 1px 10px 1px; /* top right bottom left */
 }
 
 main { 
@@ -77,21 +95,41 @@ section[class="dark"] {
 
 code {
   font-family: menlo;
-  color: rgb(58, 58, 58);
-  background-color: #f1f1f1;
+  color: rgb(203, 203, 203);
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
   padding: 2px;
+  margin: auto;
   font-size: 100%;
 }
 
 /* If class ENDS with run, set it up like snippet of code (no color) */
 code[class$="run"] {
   font-family: menlo;
-  color: rgb(58, 58, 58);
-  background-color: #f1f1f1;
+  color: rgb(203, 203, 203);
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
   padding-top: 3px;
-  padding-right: 15px;
+  padding-right: 5px;
   padding-bottom: 3px;
-  padding-left: 15px;
+  padding-left: 5px;
+  margin: 3px 1px 1px 3px;    /* top right bottom left */
+}
+
+/* used for types (e.g. int), commands (e.g. return, include) */
+code[class="bright"] {
+  font-family: menlo;
+  color: rgb(233, 10, 69);
+}
+
+/* used for numbers, paramters, strings, etc. */
+code[class="dark"] {
+  font-family: menlo;
+  color: rgb(48, 88, 216);
+}
+
+/* used for function names (e.g. main), parameter names, etc. */
+code[class="body"] {
+  font-family: menlo;
+  color: rgb(52, 176, 153);
 }
 
 button {
