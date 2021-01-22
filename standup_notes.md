@@ -42,22 +42,72 @@
 - [ ] Comments
 - Colors
    - [x] rgb(r, g, b), rgba(r, g, b, a)
+   ```css
+      h3[class="highlight"] {
+         color: black;
+         background-color: rgb(48, 201, 132);
+      }
+   ```
    - [x] #FFF, #FFFFFF
-   - [ ] hsl(h, s, l),  hsla(h, s, l, a)
+   ```css
+      h4 {
+         color: #30C886;
+         font-size: 12px;
+      }
+   ```
+   - [x] hsl(h, s, l),  hsla(h, s, l, a)
+   ```css
+      section[class="dark"] {
+         background-color: hsla(0,0,0,0.5);    /* sets opacity of black color to 50% */
+         padding: 10px;
+         font-size: 14px;
+      }
+   ```
    - [x] Color name (i.e ‘green’)
+   ```css
+      h3[class="highlight"] {
+         color: black;
+         background-color: rgb(48, 201, 132);
+      }
+   ```
 - Backgrounds
    - [x] background-color
 - Borders
-   - [ ] border-style
-   - [ ] border-color
-   - [ ] border-width
-   - [ ] border-radius
+   - [x] border-style
+   - [x] border-color
+   - [x] border-width
+   - [x] border-radius
+  ```css
+   /* table header */
+   th {
+      border-style: solid;
+      border-color: #0B0E11;
+      border-width: 3px;
+      border-radius: 2px;
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+  ```
 - Unit
    - [ ] 3 relative
    - [ ] 3 absolute
    - [ ] Box Model CSS Box Model
 - Margins
-   - [ ] Long (margin-top, margin-bottom, margin-left, margin-right)
+   - [x] Long (margin-top, margin-bottom, margin-left, margin-right)
+   ```css
+      h3[class="highlight"] {
+         font-family: 'Overpass';
+         font-weight: semi-bold;
+         color:rgb(216, 216, 216);
+         background-color: #063731;
+         padding: 5px 5px 3px 10px; /* top right bottom left */
+         margin-left: 5px;          /* space btw edge of page and section */
+         margin-right: 5px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+   ```
    - [ ] Short (margin: top right bottom left)
    - [ ] auto
 - Padding
@@ -69,7 +119,11 @@
    - [x] color
    - [x] text-decoration -- Table of Contents (in nav)
    - [x] text-align
-- Fonts: Include and use a **3rd party** font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS
+- [x] Fonts: Include and use a **3rd party** font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS.
+  ```html 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  ```
 - Display: Experiment with these types and include at least **two** of them in your page.
    - [ ] none
    - [ ] block
@@ -78,13 +132,22 @@
 - Max-width / Min-width
    - [ ] Width has to be variable (like a percentage)
 - Position: Experiment with these attributes and include at least **two** of them in your page.
-   - [ ] static
+   - [x] static
+  ```css
+   /* style of table */
+   table {
+      font-family: ibm plex sans;
+      border-collapse: collapse;
+      width: 20%;
+      position: static;
+   }
+  ```
    - [ ] relative
    - [x] fixed -- Table of Contents
    - [ ] absolute
    - [ ] sticky 
    - [x] :hover (Pseudo-class) 
-  ```
+  ```css
    /* Hover over Table of Contents */
    a:hover[class~="contents"] {
       color: white;
@@ -92,13 +155,12 @@
    }
    ```
    - [x] :active (Pseudo-class)
-   ```
+   ```css
    /* Clicked element of Table of Contents */
    a:active[class~="contents"] {
       color: #30C886;
       font-weight: bold;
    }
-
    ```
 - Flexbox (Links to an external site.)
    - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.

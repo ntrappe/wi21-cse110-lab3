@@ -8,14 +8,20 @@
 
   <style>
     body {
-      font-family: ibm plex sans;
+      font-family: 'ibm plex sans';
+      font-size: 14px;
       color: rgb(58, 58, 58);
       background-color: #101419;
       padding: 2px;
     }
   </style>
+
   <!-- EXTERNAL CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- EXTERNAL FONT Overpass-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <!-- ACTUAL PAGE CONTENT-->
@@ -27,8 +33,8 @@
     </picture>
   </header>
 
-  <!-- SITE TITLE -->
-  <h1>CSE Interview Prep</h1>
+  <!-- SITE TITLE is invisible muhahaha -->
+    <h1>CSE Interview Prep</h1> 
 
   <nav>
     <a class="table of contents" href="#DataStructures">Data Structures </a> |
@@ -40,133 +46,225 @@
   </nav> 
 
   <!-- THIS IS A GREEN LINE-->
-  <svg width="1500" height="5">
-    <rect width="1500" height="5" style="fill:#30C886" />
-  </svg>
+  <!-- 
+    <svg width="1500" height="5">
+    <rect width="1500" height="5" style="fill:#000000" />
+    </svg> 
+  -->
 
   <main>
     <!-- SECTION ON DATA STRUCTURES -->
-    <section><a name="DataStructures"><h2>Data Structures:</h2></a>
-      
-      <h3 class="highlight">&#128204; BINARY SEARCH TREE</h3>
+    <a name="DataStructures"><h2>DATA STRUCTURES</h2></a>
+
+    <section class="dark">
+      <h3 class="highlight">&#128204; BINARY SEARCH TREE</h3> <br/>
       <b>Useful for:</b> <br/> Sorting data and everything, including rebalancing, can be done in O(log n). <br/><br/>
       <b>Notes:</b> <br/> Generally use <i>unique</i> values (don't want duplicates).   <br/> <br/> 
 
       <table>
         <caption style="text-align:left"><b>Time Complexity:</b></caption>
         <colgroup>
-          <col span="1" style="background-color: #c5d7e2">
-          <col span="2" style="background-color:white">
+          <col span="1" style="background-color: #232a2e">
+          <col span="2" style="background-color:rgb(196, 196, 196)">
         </colgroup>
         <tr>
-          <th style="background-color: #2B4674"> <p style="color:white;">Operation</p></th> 
-          <th style="background-color: #2B4674"> <p style="color:white;">Average</p></th> 
-          <th style="background-color: #2B4674"> <p style="color:white;">Worst</p></th> 
+          <th style="background-color: #063731"> <p style="color:rgb(211, 211, 211);">Operation</p></th> 
+          <th style="background-color: #063731"> <p style="color:rgb(211, 211, 211);">Average</p></th> 
+          <th style="background-color: #063731"> <p style="color:rgb(211, 211, 211);">Worst</p></th> 
         </tr>
         <tr>
-          <td>Insert</td> 
+          <td style="color:rgb(179, 179, 179)">Insert</td> 
           <td>O(log n)</td> 
           <td>O(n)</td> 
         </tr>
         <tr> 
-          <td>Remove</td> 
+          <td style="color:rgb(179, 179, 179)">Remove</td> 
           <td>O(log n)</td> 
           <td>O(n)</td> 
         </tr>
         <tr> 
-          <td>Search</td> 
+          <td style="color:rgb(179, 179, 179)">Search</td> 
           <td>O(log n)</td> 
           <td>O(n)</td> 
         </tr>  
       </table> <br/>
      
       <!-- button to go see code in github-->
+      <!-- 
       <form action="https://github.com/ntrappe/Data_Structures/blob/main/BST.cpp">
         <button type="submit"> CLICK TO SEE CODE</button>
-      </form> <br/><hr>
+      </form> <br/> -->
+    </section> <br/> <br/>
 
-      <h3>&#128204; <b><mark>ARRAYS</mark></b></h3>
+
+    <section class="dark">
+      <h3 class="highlight">&#128204; ARRAYS</h3> <br/>
       <b>Useful for:</b> <br/> Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. <br/><br/>
       <b>Notes:</b> <br/> Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full.   <br/> <br/> 
 
       <table>
         <caption style="text-align:left"><b>Time Complexity:</b></caption>
         <colgroup>
-          <col span="1" style="background-color: #c5d7e2">
-          <col span="2" style="background-color:white">
+          <col span="1" style="background-color: #232a2e">
+          <col span="2" style="background-color:rgb(196, 196, 196)">
         </colgroup> 
         <tr>
-          <th style="background-color: #2B4674"> <p style="color:white;">Operation</p></th>  
-          <th style="background-color: #2B4674"> <p style="color:white;">Average</p></th> 
-          <th style="background-color: #2B4674"> <p style="color:white;">Worst</p></th> 
+          <th style="background-color: #063731"> <p style="color:white;">Operation</p></th>  
+          <th style="background-color: #063731"> <p style="color:white;">Average</p></th> 
+          <th style="background-color: #063731"> <p style="color:white;">Worst</p></th> 
         </tr> 
         <tr> 
-          <td>Access</td> 
+          <td style="color:rgb(179, 179, 179)">Access</td> 
           <td>O(1)</td> 
           <td colspan="1">O(1)</td> 
         </tr>
         <tr>
-          <td>Append</td> 
+          <td style="color:rgb(179, 179, 179)">Append</td> 
           <td>---</td> 
           <td colspan="1">O(1)</td>
         </tr>
         <tr> 
-          <td>Insert</td> 
+          <td style="color:rgb(179, 179, 179)">Insert</td> 
           <td>---</td> 
           <td>O(n)</td> 
         </tr>
         <tr> 
-          <td>Remove</td> 
+          <td style="color:rgb(179, 179, 179)">Remove</td> 
           <td>---</td> 
           <td colspan="1">O(n)</td> 
         </tr>
         <tr> 
-          <td>Search</td> 
+          <td style="color:rgb(179, 179, 179)">Search</td> 
           <td>O(n)</td> 
           <td colspan="1">O(n)</td> 
         </tr>
-      </table> <br/><hr>
+      </table> <br/>
+    </section> <br/> <br/>
 
-      <h3>&#128204; <b><mark>LINKED-LISTS</mark></b></h3>
+    <section class="dark">
+      <h3 class="highlight">&#128204; LINKED-LISTS</h3> <br/>
       <b>Useful for:</b> <br/> Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. <br/><br/>
       <b>Notes:</b> <br/> Singly-linked will save up on space and it's simpler to implement but it can make it more difficult to access previous nodes. Doubly-linked takes up <strong>double</strong> the space since we have 2x the pointers but <strong>easier</strong> to traverse backwards. <br/> <br/> 
 
       <table>
           <caption style="text-align:left"><b>Time Complexity:</b></caption>
           <colgroup>
-            <col span="1" style="background-color: #c5d7e2">
-            <col span="2" style="background-color:white">
+            <col span="1" style="background-color: #232a2e">
+            <col span="2" style="background-color:rgb(196, 196, 196)">
           </colgroup>
           <tr>  
-            <th style="background-color: #2B4674"> <p style="color:white;">Operation</p></th> 
-            <th style="background-color: #2B4674"> <p style="color:white;">Average</p></th> 
-            <th style="background-color: #2B4674"> <p style="color:white;">Worst</p></th> 
+            <th style="background-color: #063731"> <p style="color:rgb(211, 211, 211);">Operation</p></th> 
+            <th style="background-color: #063731"> <p style="color:rgb(211, 211, 211);">Average</p></th> 
+            <th style="background-color: #063731"> <p style="color:rgb(211, 211, 211);">Worst</p></th> 
           </tr> 
           <tr>  
-            <td>Insert</td>  
+            <td style="color:rgb(179, 179, 179)">Insert</td>  
             <td>O(1)</td>   
             <td colspan="1">O(1)</td>  
           </tr>   
           <tr>  
-            <td>Remove</td> 
+            <td style="color:rgb(179, 179, 179)">Remove</td> 
             <td>O(n)</td> 
             <td colspan="1">O(1)</td> 
           </tr> 
           <tr> 
-            <td>Search</td> 
+            <td style="color:rgb(179, 179, 179)">Search</td> 
             <td>O(n)</td>   
             <td colspan="1">O(n)</td>     
           </tr>
       </table> <br/>
-    </section>
+    </section> <br/> <br/>
+
+    <section class="dark">
+      <h3 class="highlight">&#128204; STACKS</h3> <br/>
+      <b>Useful for:</b> <br/> Useful for undo functions, checking for matching braces, other syntax (or TMs), supports recursion 
+      behind the scenes, and is used in DFS on a graph. <br/> <br/> 
+      <b>Notes:</b> <br/> Has 2 primary operations: <i>push</i> and <i>pop</i>. Last in, first out: what you most recently pushed will be
+      what comes out when you pop. <br/> <br/> 
+      
+      <table>
+        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <colgroup>
+          <col span="1" style="background-color: #232a2e">
+          <col span="2" style="background-color:rgb(196, 196, 196)">
+        </colgroup> 
+        <tr>
+          <th style="background-color: #063731"> <p style="color:white;">Operation</p></th>  
+          <th style="background-color: #063731"> <p style="color:white;">Average</p></th> 
+          <th style="background-color: #063731"> <p style="color:white;">Worst</p></th> 
+        </tr> 
+        <tr> 
+          <td style="color:rgb(179, 179, 179)">Push</td> 
+          <td>O(1)</td> 
+          <td colspan="1">O(1)</td> 
+        </tr>
+        <tr>
+          <td style="color:rgb(179, 179, 179)">Pop</td> 
+          <td>O(1)</td> 
+          <td colspan="1">O(1)</td>
+        </tr>
+        <tr> 
+          <td style="color:rgb(179, 179, 179)">Peek/Top</td> 
+          <td>O(1)</td> 
+          <td>O(n)</td> 
+        </tr>
+        <tr> 
+          <td style="color:rgb(179, 179, 179)">Search</td> 
+          <td>O(n)</td> 
+          <td colspan="1">O(n)</td> 
+        </tr>
+      </table> <br/>
+    </section> <br/> <br/>
+
+    <section class="dark">
+      <h3 class="highlight">&#128204; HASH MAP</h3> <br/>
+      <b>Useful for:</b> <br/> Helpful for tracking item frequencies, if large files have equal contents (without opening files). <br/> <br/> 
+      <b>Notes:</b> <br/> Provides a mapping from keys to values via hashing (called a <em>"key-value pair"</em> where keys are unique). 
+      Keys are immutable. <br/> <br/> 
+      <b>Collision Resolution Methods:</b> <br/> 
+      <ol>
+        <li><b>Open Addressing:</b> Find another place within hash table by using an offset from original hash.</li>
+        <li><b>Separate Chaining:</b>Use a separate data structure like a list to hold all different values (key-value pairs).</li>
+      </ol> 
+      
+      <table>
+        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <colgroup>
+          <col span="1" style="background-color: #232a2e">
+          <col span="2" style="background-color:rgb(196, 196, 196)">
+        </colgroup> 
+        <tr>
+          <th style="background-color: #063731"> <p style="color:white;">Operation</p></th>  
+          <th style="background-color: #063731"> <p style="color:white;">Average</p></th> 
+          <th style="background-color: #063731"> <p style="color:white;">Worst</p></th> 
+        </tr> 
+        <tr> 
+          <td style="color:rgb(179, 179, 179)">Lookup</td> 
+          <td>O(1)</td> 
+          <td colspan="1">O(n)</td> 
+        </tr>
+        <tr>
+          <td style="color:rgb(179, 179, 179)">Remove</td> 
+          <td>O(1)</td> 
+          <td colspan="1">O(n)</td>
+        </tr>
+        <tr> 
+          <td style="color:rgb(179, 179, 179)">Insert</td> 
+          <td>O(1)</td> 
+          <td>O(n)</td> 
+        </tr>
+      </table> <br/>
+    </section> <br/> <br/>
+
 
     <!-- THIS IS A GREEN LINE-->
+    <!-- 
     <svg width="1500" height="5">
       <rect width="1500" height="5" style="fill:#30C886" />
-    </svg>
+    </svg> -->
 
     <!-- SECTION ON PROGRAMMING LANGS -->
-    <section><a name="ProgrammingLanguages"><h2>Progamming Languages</h2></a>
+    <section><a name="ProgrammingLanguages"><h2>PROGRAMMING LANGUAGES</h2></a>
     <ol>
       <li> <strong>C</strong>: Procedural-oriented language; no references (just pointers), no function overloading, + memory management. <br/> <br/>
         <details>
