@@ -58,11 +58,11 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; BINARY SEARCH TREE</h3> <br/>
-      <b>Useful for:</b> <br/> Sorting data and everything, including rebalancing, can be done in O(log n). <br/><br/>
-      <b>Notes:</b> <br/> Generally use <i>unique</i> values (don't want duplicates).   <br/> <br/> 
+      <h5>Useful for:</h5> Sorting data and everything, including rebalancing, can be done in O(log n). <br/><br/>
+      <h5>Notes:</h5> Generally use <i>unique</i> values (don't want duplicates).   <br/> <br/> 
 
       <table>
-        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
         <colgroup>
           <col span="1" style="background-color: #232a2e">
           <col span="2" style="background-color:rgb(196, 196, 196)">
@@ -99,11 +99,11 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; ARRAYS</h3> <br/>
-      <b>Useful for:</b> <br/> Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. <br/><br/>
-      <b>Notes:</b> <br/> Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full.   <br/> <br/> 
+      <h5>Useful for:</h5> Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. <br/><br/>
+      <h5>Notes:</h5> Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full.   <br/> <br/> 
 
       <table>
-        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
         <colgroup>
           <col span="1" style="background-color: #232a2e">
           <col span="2" style="background-color:rgb(196, 196, 196)">
@@ -143,11 +143,11 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; LINKED-LISTS</h3> <br/>
-      <b>Useful for:</b> <br/> Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. <br/><br/>
-      <b>Notes:</b> <br/> Singly-linked will save up on space and it's simpler to implement but it can make it more difficult to access previous nodes. Doubly-linked takes up <strong>double</strong> the space since we have 2x the pointers but <strong>easier</strong> to traverse backwards. <br/> <br/> 
+      <h5>Useful for:</h5> Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. <br/><br/>
+      <h5>Notes:</h5> Singly-linked will save up on space and it's simpler to implement but it can make it more difficult to access previous nodes. Doubly-linked takes up <strong>double</strong> the space since we have 2x the pointers but <strong>easier</strong> to traverse backwards. <br/> <br/> 
 
       <table>
-          <caption style="text-align:left"><b>Time Complexity:</b></caption>
+          <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
           <colgroup>
             <col span="1" style="background-color: #232a2e">
             <col span="2" style="background-color:rgb(196, 196, 196)">
@@ -177,13 +177,13 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; STACKS</h3> <br/>
-      <b>Useful for:</b> <br/> Useful for undo functions, checking for matching braces, other syntax (or TMs), supports recursion 
+      <h5>Useful for:</h5> Useful for undo functions, checking for matching braces, other syntax (or TMs), supports recursion 
       behind the scenes, and is used in DFS on a graph. <br/> <br/> 
-      <b>Notes:</b> <br/> Has 2 primary operations: <i>push</i> and <i>pop</i>. Last in, first out: what you most recently pushed will be
+      <h5>Notes:</h5>  Has 2 primary operations: <i>push</i> and <i>pop</i>. Last in, first out: what you most recently pushed will be
       what comes out when you pop. <br/> <br/> 
       
       <table>
-        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
         <colgroup>
           <col span="1" style="background-color: #232a2e">
           <col span="2" style="background-color:rgb(196, 196, 196)">
@@ -218,17 +218,17 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; HASH MAP</h3> <br/>
-      <b>Useful for:</b> <br/> Helpful for tracking item frequencies, if large files have equal contents (without opening files). <br/> <br/> 
-      <b>Notes:</b> <br/> Provides a mapping from keys to values via hashing (called a <em>"key-value pair"</em> where keys are unique). 
+      <h5>Useful for:</h5> Helpful for tracking item frequencies, if large files have equal contents (without opening files). <br/> <br/> 
+      <h5>Notes:</h5> Provides a mapping from keys to values via hashing (called a <em>"key-value pair"</em> where keys are unique). 
       Keys are immutable. <br/> <br/> 
-      <b>Collision Resolution Methods:</b> <br/> 
+      <h5>Collision Resolution Methods:</h5>
       <ol>
         <li><b>Open Addressing:</b> Find another place within hash table by using an offset from original hash.</li>
         <li><b>Separate Chaining:</b>Use a separate data structure like a list to hold all different values (key-value pairs).</li>
       </ol> 
       
       <table>
-        <caption style="text-align:left"><b>Time Complexity:</b></caption>
+        <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
         <colgroup>
           <col span="1" style="background-color: #232a2e">
           <col span="2" style="background-color:rgb(196, 196, 196)">
@@ -266,60 +266,53 @@
     <!-- SECTION ON PROGRAMMING LANGS -->
     <section><a name="ProgrammingLanguages"><h2>PROGRAMMING LANGUAGES</h2></a>
     <ol>
-      <li> <strong>C</strong>: Procedural-oriented language; no references (just pointers), no function overloading, + memory management. <br/> <br/>
+      <h4> <li> C: Procedural-oriented language; no references (just pointers), no function overloading, + memory management. </h4>
+        <h5>Basic Example:</h5>
+        <code>#</code><code class="bright">include</code><code class="dark">&lt;stdio.h&gt;</code> <br/>
+        <code class="bright">int</code> <code class="body">main()</code> <br/>
+        &nbsp; &nbsp; <code class="body">printf</code><code>(</code><code class="dark">"Hello World!"</code><code>);</code> <br/>
+        &nbsp; &nbsp; <code class="bright">return</code> <code class="dark">0</code><code>;</code> <br/>
+        <code>}</code> <br/> <br/>
+        
         <details>
-          <summary><b>Basic Example:</b></summary>
-            <code>#</code><code style="color:crimson;">include </code> <code style="color:MidnightBlue;">&lt;stdio.h&gt;</code> <br/>
-            <code style="color:crimson;">int</code> <code style="color:SteelBlue;">main()</code> <br/>
-            &nbsp; <code style="color:SteelBlue;">printf</code><code>(</code><code style="color:MidnightBlue;">"Hello World!"</code><code>);</code> <br/>
-            &nbsp; <code style="color:crimson;">return</code> <code style="color:SteelBlue;">0</code>; <br/>
-            <code>}</code>
-        </details> <br/>
-        <details>
-          <summary><b>To Run:</b></summary>
-          <code class="to run">gcc -o hi Helloworld.c</code> <br/> <br/>
+          <summary>To Run:</summary>
+          <code class="to run">gcc -o hi</code> <code style="color:aqua;">Helloworld.c</code> <br/> <br/>
           <code class="to run">hi</code>
         </details> <br/>
       </li>
 
-      <li>(2) <strong>C++</strong>: Object-oriented language; references, pointers, function overloading + memory management. <br/> <br/>
+      <h4> <li> C++: Object-oriented language; references, pointers, function overloading + memory management.</h4> 
+        <h5>Basic Example:</h5>
+        <code>#</code><code class="bright">include </code><code class="dark">&lt;stdio.h&gt;</code> <br/>
+          <code class="bright">int</code> <code class="body">main()</code> <br/>
+          &nbsp; &nbsp; <code>cout &lt;&lt;</code> <code class="dark">"Hello World!"</code> <code>&lt;&lt; endl;</code> <br/>
+          &nbsp; &nbsp; <code class="bright">return</code> <code class="dark">0</code><code>;</code> <br/>
+          <code>}</code> <br/> <br/>
         <details>
-          <summary><b>Basic Example:</b></summary>
-          <code>#</code><code style="color:crimson;">include </code><code style="color:MidnightBlue;">&lt;stdio.h&gt;</code> <br/>
-            <code style="color:crimson;">int</code> <code style="color:SteelBlue;">main()</code> <br/>
-            &nbsp; <code>cout &lt;&lt;</code> <code style="color:MidnightBlue;">"Hello World!"</code> <code>&lt;&lt; endl;</code> <br/>
-            &nbsp; <code style="color:crimson;">return</code> <code style="color:SteelBlue;">0</code><code>;</code> <br/>
-            <code>}</code>
-        </details> <br/>
-        <details>
-          <summary><b>To Run:</b></summary>
+          <summary>To Run:</summary>
           <code class="to run">g++ -o hi Helloworld.c</code> <br/> <br/>
           <code class="to run">./hi</code>
         </details> <br/>
       </li> 
 
-      <li> <strong>Python</strong>: Object-oriented/scripting language; pointers, function overloading + automatic garbage collection.<br/> <br/>
+      <h4> <li> Python: Object-oriented/scripting language; pointers, function overloading + automatic garbage collection. </h4>
+        <h5>Basic Example:</h5>
+        <code class="bright">def</code> <code class="body">hello</code><code>():</code> <br/>
+          &nbsp; &nbsp; <code class="bright">print</code> <code>(</code> <code class="dark">"Hello World!</code> <code>)</code> <br/>
+          <code class="body">hello</code><code>()</code> <br/> <br/>
         <details>
-          <summary><b>Basic Example:</b></summary>
-            <code style="color:crimson;">def</code> <code style="color:crimson;">hello</code><code>():</code> <br/>
-            &nbsp; <code style="color:SteelBlue;">print</code><code style="color:MidnightBlue;">("Hello World!)</code><br/>
-            <code style="color:SteelBlue;">hello</code><code>()</code>
-        </details> <br/>
-        <details>
-          <summary><b>To Run:</b></summary>
+          <summary>To Run:</summary>
           <code class="to run">python Helloworld.py</code>
         </details> <br/>
       </li>  
 
-      <li> <strong>Java</strong>: Object-oriented language; references, method overloading + automatic garbage collection. <br/> <br/>
-        <details>
-          <summary><b>Basic Example:</b></summary>
-            <code style="color:crimson;">public class</code> <code style="color:SteelBlue;">HelloWorld</code><code>{</code> <br/>
-            &nbsp; <code style="color:crimson;">public static void</code> <code style="color:SteelBlue;">main</code>(<code style="color:crimson;">String</code>[]<code style="color:crimson;">args</code>) {<br/>
-            &nbsp; &nbsp; <code>System.out.println(</code><code style="color:MidnightBlue;">"Hello World!"</code><code>);</code> <br/>
-            &nbsp; <code>}</code> <br/>
-          <code>}</code>
-        </details> <br/>
+       <h4><li> Java: Object-oriented language; references, method overloading + automatic garbage collection. </h4>
+        <h5>Basic Example:</h5>
+        <code class="bright">public class</code> <code class="body">HelloWorld</code><code>{</code> <br/>
+          &nbsp; &nbsp; <code class="bright">public static void</code> <code class="body">main</code> <code>(</code> <code class="bright">String</code> <code>[]</code> <code class="bright">args</code> <code>) {</code> <br/>
+          &nbsp; &nbsp; &nbsp; &nbsp; <code>System.out.println(</code><code class="dark">"Hello World!"</code><code>);</code> <br/>
+          &nbsp; &nbsp; <code>}</code> <br/>
+          <code>}</code> <br/> <br/>
         <details>
           <summary><b>To Run:</b></summary>
           <code class="to run">javac Helloworld.java</code> <br/> <br/>

@@ -9,6 +9,23 @@
    - use Google Fonts instead of importing via font-family
    - if time allows, set up an external CSS that will do color formatting for diff coding languages
 - Where are you blocked?
+  - Wanted to set up custom color coding for the code section. E.g. when the word 'main' shows up color that, if 'return' color that, etc. Basic CSS will not look at text content. Checked Javascript, that won't work either. Kinda disappointed. Might have to brute force.
+- Comfort Level — How close are we to hitting our sprint goals?
+  - Only done 25% of features need. But it's aesthetic so far.
+
+---
+
+##### Friday, Jan 22, 2021
+- What did you do yesterday?
+   - external CSS doc
+   - learned how to set up classes tied to css styling
+   - finished data structures section and added more content
+   - most color, padding, margins, border, etc. is done
+- What will you do today?
+   - all the selectors, display, position, flexbox, and grid
+   - have a cool design idea for the earth's layers that could use position
+   - try to do all this work using the Pomodoro Timer too
+- Where are you blocked?
 - Comfort Level — How close are we to hitting our sprint goals?
 
 ---
@@ -108,8 +125,30 @@
          margin-bottom: 10px;
       }
    ```
-   - [ ] Short (margin: top right bottom left)
-   - [ ] auto
+   - [x] Short (margin: top right bottom left)
+   ```css
+      code[class$="run"] {
+         font-family: menlo;
+         color: rgb(203, 203, 203);
+         background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+         padding-top: 3px;
+         padding-right: 5px;
+         padding-bottom: 3px;
+         padding-left: 5px;
+         margin: 3px 1px 1px 3px;    /* top right bottom left */
+      }
+   ```
+   - [x] auto
+   ```css
+      code {
+         font-family: menlo;
+         color: rgb(203, 203, 203);
+         background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+         padding: 5px;
+         margin: auto;
+         font-size: 100%;
+      }
+   ```
 - Padding
    - [x] Long (padding-top, padding-bottom, padding-left, padding-right)
    - [x] Shorthand (padding: top right bottom left)
