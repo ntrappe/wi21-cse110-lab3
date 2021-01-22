@@ -33,14 +33,23 @@ h2[class="underline"] {
   text-decoration: underline;
 }
 
+/* Font per Section (e.g. "Binry Search Tree") */
 h3 {
   color: #000000;
   font-size: 18px;
 }
 
+/* Font per Section (e.g. "Binry Search Tree") */
 h3[class="highlight"] {
-  color: black;
-  background-color: rgb(48, 201, 132);
+  font-family: 'Overpass';
+  font-weight: semi-bold;
+  color:rgb(216, 216, 216);
+  background-color: #063731;
+  padding: 5px 5px 3px 10px; /* top right bottom left */
+  margin-left: 5px;   /* space btw edge of page and section */
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -59,9 +68,12 @@ section {
 }
 
 section[class="dark"] {
-  background-color: hsla(0,0,0,0.5);    /* sets opacity of black color */
-  padding: 10px;
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
   font-size: 14px;
+  color: rgb(180, 179, 179);
 }
 
 code {

@@ -14,8 +14,10 @@
       padding: 2px;
     }
   </style>
+
   <!-- EXTERNAL CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  
   <!-- EXTERNAL FONT Overpass-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
@@ -52,8 +54,8 @@
   <main>
     <!-- SECTION ON DATA STRUCTURES -->
     <a name="DataStructures"><h2>DATA STRUCTURES</h2></a>
-    <section>
-      
+
+    <section class="dark">
       <h3 class="highlight">&#128204; BINARY SEARCH TREE</h3>
       <b>Useful for:</b> <br/> Sorting data and everything, including rebalancing, can be done in O(log n). <br/><br/>
       <b>Notes:</b> <br/> Generally use <i>unique</i> values (don't want duplicates).   <br/> <br/> 
@@ -90,7 +92,9 @@
       <form action="https://github.com/ntrappe/Data_Structures/blob/main/BST.cpp">
         <button type="submit"> CLICK TO SEE CODE</button>
       </form> <br/><hr>
+    </section> <br/> <br/>
 
+    <section> 
       <h3>&#128204; <b><mark>ARRAYS</mark></b></h3>
       <b>Useful for:</b> <br/> Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. <br/><br/>
       <b>Notes:</b> <br/> Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full.   <br/> <br/> 
@@ -132,6 +136,7 @@
           <td colspan="1">O(n)</td> 
         </tr>
       </table> <br/><hr>
+    </section>
 
       <h3>&#128204; <b><mark>LINKED-LISTS</mark></b></h3>
       <b>Useful for:</b> <br/> Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. <br/><br/>
@@ -164,7 +169,6 @@
             <td colspan="1">O(n)</td>     
           </tr>
       </table> <br/>
-    </section>
 
     <!-- THIS IS A GREEN LINE-->
     <svg width="1500" height="5">
