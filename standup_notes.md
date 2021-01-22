@@ -42,9 +42,34 @@
 - [ ] Comments
 - Colors
    - [x] rgb(r, g, b), rgba(r, g, b, a)
+   ```css
+      h3[class="highlight"] {
+         color: black;
+         background-color: rgb(48, 201, 132);
+      }
+   ```
    - [x] #FFF, #FFFFFF
-   - [ ] hsl(h, s, l),  hsla(h, s, l, a)
+   ```css
+      h4 {
+         color: #30C886;
+         font-size: 12px;
+      }
+   ```
+   - [x] hsl(h, s, l),  hsla(h, s, l, a)
+   ```css
+      section[class="dark"] {
+         background-color: hsla(0,0,0,0.5);    /* sets opacity of black color to 50% */
+         padding: 10px;
+         font-size: 14px;
+      }
+   ```
    - [x] Color name (i.e ‘green’)
+   ```css
+      h3[class="highlight"] {
+         color: black;
+         background-color: rgb(48, 201, 132);
+      }
+   ```
 - Backgrounds
    - [x] background-color
 - Borders
@@ -69,7 +94,11 @@
    - [x] color
    - [x] text-decoration -- Table of Contents (in nav)
    - [x] text-align
-- Fonts: Include and use a **3rd party** font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS
+- [x] Fonts: Include and use a **3rd party** font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS.
+  ```html 
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  ```
 - Display: Experiment with these types and include at least **two** of them in your page.
    - [ ] none
    - [ ] block
