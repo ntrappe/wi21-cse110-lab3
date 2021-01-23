@@ -34,7 +34,7 @@
   </header>
 
   <!-- SITE TITLE is invisible muhahaha -->
-    <h1>CSE Interview Prep</h1> 
+  <h1>Computer Science</h1> 
 
   <nav>
     <a class="table of contents" href="#DataStructures">Data Structures </a> |
@@ -58,7 +58,7 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; BINARY SEARCH TREE</h3> <br/>
-      <h5>Useful for:</h5> Sorting data and everything, including rebalancing, can be done in O(log n). <br/><br/>
+      <h5>Useful for:</h5> <p>Sorting data and everything, including rebalancing, can be done in O(log n).</p> 
       <h5>Notes:</h5> Generally use <i>unique</i> values (don't want duplicates).   <br/> <br/> 
 
       <table>
@@ -99,8 +99,8 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; ARRAYS</h3> <br/>
-      <h5>Useful for:</h5> Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. <br/><br/>
-      <h5>Notes:</h5> Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full.   <br/> <br/> 
+      <h5>Useful for:</h5> <p>Storing and accessing sequential data, temporarily storing, as an IO buffer (when reading from a file), lookup table, and hack for multiple return values. </p>
+      <h5>Notes:</h5> <p>Can implement a <em>dynamic array</em> from static ones by continuously allocating double the space once the array is full. </p>
 
       <table>
         <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
@@ -143,8 +143,8 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; LINKED-LISTS</h3> <br/>
-      <h5>Useful for:</h5> Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. <br/><br/>
-      <h5>Notes:</h5> Singly-linked will save up on space and it's simpler to implement but it can make it more difficult to access previous nodes. Doubly-linked takes up <strong>double</strong> the space since we have 2x the pointers but <strong>easier</strong> to traverse backwards. <br/> <br/> 
+      <h5>Useful for:</h5> <p>Useful in lists, queues, and stacks. Often used for circular (round robin) or adjacency lists. </p>
+      <h5>Notes:</h5> <p>Singly-linked will save up on space and it's simpler to implement but it can make it more difficult to access previous nodes. Doubly-linked takes up <strong>double</strong> the space since we have 2x the pointers but <strong>easier</strong> to traverse backwards. </p>
 
       <table>
           <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
@@ -177,10 +177,8 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; STACKS</h3> <br/>
-      <h5>Useful for:</h5> Useful for undo functions, checking for matching braces, other syntax (or TMs), supports recursion 
-      behind the scenes, and is used in DFS on a graph. <br/> <br/> 
-      <h5>Notes:</h5>  Has 2 primary operations: <i>push</i> and <i>pop</i>. Last in, first out: what you most recently pushed will be
-      what comes out when you pop. <br/> <br/> 
+      <h5>Useful for:</h5> <p>Useful for undo functions, checking for matching braces, other syntax (or TMs), supports recursion behind the scenes, and is used in DFS on a graph. </p>
+      <h5>Notes:</h5> <p>Has 2 primary operations: <i>push</i> and <i>pop</i>. Last in, first out: what you most recently pushed will be what comes out when you pop. </p>
       
       <table>
         <caption style="text-align:left"><h5>Time Complexity:</h5></caption>
@@ -218,9 +216,8 @@
 
     <section class="dark">
       <h3 class="highlight">&#128204; HASH MAP</h3> <br/>
-      <h5>Useful for:</h5> Helpful for tracking item frequencies, if large files have equal contents (without opening files). <br/> <br/> 
-      <h5>Notes:</h5> Provides a mapping from keys to values via hashing (called a <em>"key-value pair"</em> where keys are unique). 
-      Keys are immutable. <br/> <br/> 
+      <h5>Useful for:</h5> <h6> Helpful for tracking item frequencies, if large files have equal contents (without opening files). </h6>
+      <h5>Notes:</h5> <h6> Provides a mapping from keys to values via hashing (called a <em>"key-value pair"</em> where keys are unique). Keys are immutable. </h6> 
       <h5>Collision Resolution Methods:</h5>
       <ol>
         <li><b>Open Addressing:</b> Find another place within hash table by using an offset from original hash.</li>
@@ -256,12 +253,11 @@
       </table> <br/>
     </section> <br/> <br/>
 
-
-    <!-- THIS IS A GREEN LINE-->
-    <!-- 
+    <!-- THIS IS A GREY LINE-->
     <svg width="1500" height="5">
-      <rect width="1500" height="5" style="fill:#30C886" />
-    </svg> -->
+      <rect width="1500" height="5" style="fill:#393939"/>
+    </svg>
+  
 
     <!-- SECTION ON PROGRAMMING LANGS -->
     <section><a name="ProgrammingLanguages"><h2 class="section_title">PROGRAMMING LANGUAGES</h2></a>
@@ -337,22 +333,11 @@
     </ol>
     </section>
 
-    <!-- THIS IS A GREEN LINE -->
-    <canvas id="myCanvas" width="1500" height="5"></canvas>
-    <script>
-      var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-
-      // Green line (looks same as svg)
-      context.beginPath();
-      context.fillStyle = "#30C886";
-      context.fillRect(0, 0, 10000, 5);   // xoffset, yoffset, width, height
-      context.stroke();
-    </script>
-
-
-
-
+  
+    <!-- THIS IS A GREY LINE-->
+    <svg width="1500" height="5">
+      <rect width="1500" height="5" style="fill:#393939"/>
+    </svg>
 
 
     <!-- SECTION ON SORTING ALGORITHMS -->
@@ -360,10 +345,6 @@
       <iframe src="https://www.interviewcake.com/sorting-algorithm-cheat-sheet" height="400" width="800" title="Sorting Algos"></iframe> 
     </section>
 
-     <!-- THIS IS A GREEN LINE-->
-     <svg width="1500" height="5">
-      <rect width="1500" height="5" style="fill:#30C886" />
-    </svg>
 
     <section><a name="MachineLearning"><h2 class="section_title">Machine Learning</h2></a>
       <ul>
@@ -393,11 +374,20 @@
         If you're interested in ML and want to learn more about how <a href="https://github.com/ntrappe/ML-Models/blob/master/K-Means%20Tutorial(1).ipynb">KNNs</a>, CNNs, PCA, etc. work, then check out this <a href="https://github.com/ntrappe/ML-Models">GitHub Repo</a>.
       </aside>
     </section>
+<!--
 
-     <!-- THIS IS A GREEN LINE-->
-     <svg width="1500" height="5">
-      <rect width="1500" height="5" style="fill:#30C886"/>
-    </svg>
+    <h2 class="section_title"> V2 Sorting Algorithms</h2>
+    <div class="grid-container">
+      <div class="item1">Selection Sort</div>
+      <div class="item2">Insertion Sort</div>
+      <div class="item3">Bubble Sort</div>
+      <div class="item4">Merge Sort</div>
+      <div class="item5">Quick Sort</div>
+      <div class="item6">Heap Sort</div>
+    </div>
+  -->
+
+  
 
     <section><a name="Survey"><h2 class="section_title">Survey/HTML Form Example</h2></a>
       <!-- TEMPLATE -->
@@ -419,10 +409,12 @@
 
     </section>
 
-    <!-- THIS IS A GREEN LINE-->
+
+    <!-- THIS IS A GREY LINE-->
     <svg width="1500" height="5">
-      <rect width="1500" height="5" style="fill:#30C886"/>
+      <rect width="1500" height="5" style="fill:#393939"/>
     </svg>
+
 
     <!-- AUDIO AND VIDEO -->
     <section><a name="Random"><h2 class="section_title">Random/Audio and Video</h2></a>
@@ -437,25 +429,10 @@
         <source src="Christmas.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio> <br/> <hr> <br/>
-      
-      <h3>When the Panic Sets In:</h3>
-      Just in case I forget, these are the programming languages I am fluent in:
-      <ol>
-        <li> Java </li>
-        <li> C/C++ </li>
-        <li> Python </li>
-        <li> ARM </li>
-        <li> Google Scripts </li>
-      </ol> <br/> <hr> <br/>  
-      Just in case I forget, these are the languages I am fluent-ish in:
-      <ul>
-        <li> Spanish </li>
-        <li> English </li>
-        <li> French <em>(barely)</em> </li>
-        <li> Danish </li>
-      </ul>
     </section>
     <br/>
+
+  
   </main>
 
   
