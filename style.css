@@ -332,14 +332,20 @@ figcaption {
 
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
+  background-color: #101419;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+  background-color: #0B0E11;
+  margin: 5px;
+  padding: 10px;
+  font-size: 10px;
+}
+
+div > img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
