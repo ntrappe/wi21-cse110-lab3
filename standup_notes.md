@@ -381,8 +381,9 @@
       font-weight: bold;
    }
    ```
-- Flexbox (Links to an external site.)
+- Flexbox 
    - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
-- Grid (Links to an external site.)
-   - [ ] Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
+- Grid 
+   - Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
+   - [ ] 
 - [ ] Media Query. At least **one query** based on the screen width
