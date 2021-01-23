@@ -1,3 +1,8 @@
+/* left align all text */
+* {
+  text-align: left;
+}
+
 /* If class EQUALS highlight then background color yellow */
 body[class="highlight"] {
   background-color: 2EC987;
@@ -68,11 +73,21 @@ h4 {
 }
 
 /* Small heading to label examples (e.g. "To Run..Basic Example...") */
-h5 {
+h5, h6 {
   font-family: 'Overpass';
-  color: rgb(179, 179, 179);
+  color: rgb(211, 211, 211);
   font-size: 15px;
   margin: 1px 1px 10px 1px; /* top right bottom left */
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  color: rgb(179, 179, 179);
+  font-size: 14px;
+  padding-bottom: 20px;
 }
 
 summary {
@@ -86,6 +101,7 @@ main {
   font-size: 10px; 
   padding: 10px
 }
+
 
 section {
   padding: 10px;
@@ -104,9 +120,9 @@ code {
   font-family: menlo;
   color: rgb(203, 203, 203);
   background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
-  padding: 2px;
   margin: auto;
   font-size: 100%;
+  padding: 5px;
 }
 
 /* If class ENDS with run, set it up like snippet of code (no color) */
@@ -235,8 +251,9 @@ a:active[class~="contents"] {
 table {
   font-family: ibm plex sans;
   border-collapse: collapse;
-  width: 20%;
   position: static;
+  width: 100px;
+  height: 20px;
 }
 
 caption {
@@ -291,10 +308,19 @@ td {
   grid-column-end: 2;
 }
 
-footer {
+/* header positioned reltive + slightly up */
+header {
   position: relative;
-  margin-top: 5px;
+  bottom: 30px;
 }
+
+/* footer will stick to top if scrolled over */
+footer {
+  position: -webkit-sticky;
+  position: sticky;   /* once scrolled over, will stay at top of screen */
+}
+
+
 
 
 

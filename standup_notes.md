@@ -33,9 +33,25 @@
 ### Work Log
 
 ##### Selectors
-- [ ] Class Selector (.class)
-- [ ] ID Selector (#id)
-- [ ] Universal Selector (*)
+- [x] Class Selector (.class)
+   ```css
+      .item1 {
+         grid-row-start: 1;
+         grid-row-end: 2;
+         grid-column-start: 1;
+         grid-column-end: 2;
+      }
+   ```
+- [x] ID Selector (#id)
+  ```html
+      <a class="table of contents" href="#DataStructures">Data Structures </a> |
+  ```
+- [x] Universal Selector (*)
+   ```css
+      * {
+         text-align: left;
+      }
+   ```
 - [ ] Element Selector (element)
 - [x] Attribute Selector (e.g. [attribute=foo])
    ```css
@@ -46,9 +62,23 @@
          padding: 2px;
       }
    ```
-- [ ] Pseudo-class Selectors (e.g. p::hover)
+- [x] Pseudo-class Selectors (e.g. p::hover)
+  ```css
+      a:hover[class~="contents"] {
+         color: white;
+         font-weight: bold;
+      }
+  ```
 - [ ] Grouping / Combinators
-- [ ] Selector List (element, element)
+- [x] Selector List (element, element)
+  ```css
+   h5, h6 {
+      font-family: 'Overpass';
+      color: rgb(211, 211, 211);
+      font-size: 15px;
+      margin: 1px 1px 10px 1px; /* top right bottom left */
+   }
+  ```
 - [x] Descendant Combinator (element element)
   ```css
       ol li {
@@ -96,7 +126,10 @@
   ```
 
 ##### CSS Topics       
-- [ ] Comments
+- [x] Comments
+   ```css
+      /* literally all over style.css */
+   ```
 - Colors
    - [x] rgb(r, g, b), rgba(r, g, b, a)
    ```css
@@ -192,8 +225,22 @@
 - Padding
    - [x] Long (padding-top, padding-bottom, padding-left, padding-right)
    - [x] Shorthand (padding: top right bottom left)
-   - [ ] Height / Width
-   - [ ] Set the height and width for an element
+   - [x] Height / Width
+   ```css
+      table {
+         font-family: ibm plex sans;
+         border-collapse: collapse;
+         position: static;
+         width: 100px;
+         height: 20px;
+      }
+   ```
+   - [x] Set the height and width for an element
+   ```html
+      <svg width="1500" height="5">
+      <rect width="1500" height="5" style="fill:#393939"/>
+      </svg>
+   ```
 - Text
    - [x] color
    - [x] text-decoration -- Table of Contents (in nav)
@@ -227,7 +274,12 @@
       }
    ```
 - Max-width / Min-width
-   - [ ] Width has to be variable (like a percentage)
+   - [x] Width has to be variable (like a percentage)
+   ```html
+       <footer>
+         <img src="footer.jpeg" alt="Footer Image" style="width: 100%">
+      </footer>
+   ```
 - Position: Experiment with these attributes and include at least **two** of them in your page.
    - [x] static
   ```css
@@ -235,20 +287,34 @@
    table {
       font-family: ibm plex sans;
       border-collapse: collapse;
-      width: 20%;
       position: static;
+      width: 100px;
+      height: 20px;
    }
   ```
    - [x] relative
    ```css
-      footer {
+      header {
          position: relative;
-         margin-top: 5px;
+         bottom: 30px;
       }
    ```
    - [x] fixed -- Table of Contents
-   - [ ] absolute
-   - [ ] sticky 
+   - [x] absolute
+   ```css
+      header {
+         position: absolute;
+         top: -10px;
+      }
+   ```
+   - [x] sticky 
+   ```css
+      footer {
+         position: -webkit-sticky;
+         position: sticky;   /* once scrolled over, will stay at top of screen */
+      }
+
+   ```
    - [x] :hover (Pseudo-class) 
   ```css
    /* Hover over Table of Contents */
