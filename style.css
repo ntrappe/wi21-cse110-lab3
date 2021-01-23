@@ -27,10 +27,15 @@ h2[class="darklight"] {
   background-color: rgb(0, 0, 0);
 }
 
-h2[class="underline"] {
-  color: #2B4674;
-  font-size: 30px;
+/* For Section Titles (e.g. "Data Structures") */
+h2.section_title {
+  /* basically h2 with slight underline */
+  color: #2558b1;
+  font-size: 35px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
   text-decoration: underline;
+  text-decoration-color: rgb(28, 33, 52);
 }
 
 /* Font per Section (e.g. "Binry Search Tree") */
@@ -92,7 +97,6 @@ section[class="dark"] {
   padding-top: 20px;
   color: rgb(180, 179, 179);
 }
-
 code {
   font-family: menlo;
   color: rgb(203, 203, 203);
@@ -130,6 +134,38 @@ code[class="dark"] {
 code[class="body"] {
   font-family: menlo;
   color: rgb(52, 176, 153);
+}
+
+
+/* Style for h5 text DIRECTLY AFTER h4 */
+h4 + h5 {
+  color:rgb(225, 225, 225);
+  background-color: hsla(0,100%,100%,0.01);
+}
+
+/* Style for li (list element) UNDER ol (ordered list) e.g. descriptions of langs grey-white */
+ol li {
+  /* same style as h4 */
+  font-weight: normal;
+  color: rgb(193, 193, 193);
+}
+
+/* Style for code CHILD of details */
+details > code {
+  /* same as to run style code */
+  font-family: menlo;
+  color: rgb(203, 203, 203);
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  margin: 3px 1px 1px 3px;    /* top right bottom left */
+}
+
+/* Style for every src code element PRECEDED by code (e.g. "To Run" --> label file names) */
+code ~ code[class="src"] {
+  color: aquamarine;
 }
 
 button {
@@ -226,4 +262,8 @@ td {
   padding-top: 7px;
   padding-bottom: 7px;
 }
+
+
+
+
 

@@ -49,11 +49,51 @@
 - [ ] Pseudo-class Selectors (e.g. p::hover)
 - [ ] Grouping / Combinators
 - [ ] Selector List (element, element)
-- [ ] Descendant Combinator (element element)
-- [ ] Child Combinator (element > element)
-- [ ] General sibling combinator (element ~ element)
-- [ ] Adjacent sibling combinator (element + element)
-- [ ] Combining Two Selectors (element.class)
+- [x] Descendant Combinator (element element)
+  ```css
+      ol li {
+         font-weight: normal;
+         color: rgb(193, 193, 193);
+      }
+   ```
+- [x] Child Combinator (element > element)
+  ```css
+   details > code {
+      font-family: menlo;
+      color: rgb(203, 203, 203);
+      background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+      padding-top: 3px;
+      padding-right: 5px;
+      padding-bottom: 3px;
+      padding-left: 5px;
+      margin: 3px 1px 1px 3px;    /* top right bottom left */
+   }
+   ```
+- [x] General sibling combinator (element ~ element)
+  ```css
+      code ~ code[class="src"] {
+         color: aquamarine;
+      }
+   ```
+- [x] Adjacent sibling combinator (element + element)
+  ```css
+   /* Style for h5 text DIRECTLY AFTER h4 */
+   h4 + h5 {
+      color:rgb(225, 225, 225);
+      background-color: hsla(0,100%,100%,0.02);
+   }
+  ```
+- [x] Combining Two Selectors (element.class)
+  ```css
+      h2.section_title {
+         color: #2558b1;
+         font-size: 35px;
+         font-family: 'Overpass', sans-serif;
+         font-weight: bold;
+         text-decoration: underline;
+         text-decoration-color: rgb(28, 33, 52);
+      }
+  ```
 
 ##### CSS Topics       
 - [ ] Comments
