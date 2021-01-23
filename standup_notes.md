@@ -204,10 +204,28 @@
       <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
   ```
 - Display: Experiment with these types and include at least **two** of them in your page.
-   - [ ] none
+   - [x] none
+   ```css
+      h1 {
+         color: #dac529;
+         font-size: 10px;
+         display: none;
+      }
+   ```
    - [ ] block
    - [ ] inline-block
-   - [ ] inline
+   - [x] inline
+   ```css
+      nav {
+         text-align: left;
+         font-size: 14px;
+         color: white;
+         .
+         .
+         .
+         display: inline;
+      }
+   ```
 - Max-width / Min-width
    - [ ] Width has to be variable (like a percentage)
 - Position: Experiment with these attributes and include at least **two** of them in your page.
@@ -221,7 +239,13 @@
       position: static;
    }
   ```
-   - [ ] relative
+   - [x] relative
+   ```css
+      footer {
+         position: relative;
+         margin-top: 5px;
+      }
+   ```
    - [x] fixed -- Table of Contents
    - [ ] absolute
    - [ ] sticky 
