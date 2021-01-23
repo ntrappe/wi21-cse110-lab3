@@ -26,7 +26,11 @@
    - have a cool design idea for the earth's layers that could use position
    - try to do all this work using the Pomodoro Timer too
 - Where are you blocked?
+  - Got stuck on trying to control to size of the container for Flex Box and Grid. Just did design work to deal with it but not fixed.
+  - Didn't finish a future crazy design but it didn't go with the theme.
+  - Would've preferred more time to adjust the way images fit in boxes.
 - Comfort Level — How close are we to hitting our sprint goals?
+  - at 11:45pm I think we cut it close
 
 ---
 
