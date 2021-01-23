@@ -330,6 +330,12 @@ figcaption {
   grid-column-end: 2;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
 aside {
   background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
   padding: 10px 20px 10px 20px;

@@ -384,6 +384,25 @@
 - Flexbox 
    - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
 - Grid 
-   - Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
-   - [ ] 
+   - [x] Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
+  ```css
+      .grid-container {
+         width:fit-content;
+         display: grid;
+         grid-template-columns: repeat(3, 200px [col-start]);
+         grid-gap: 20px;      /* center dividing lines */
+         background-color: #101419;;
+         padding: 5px;       /* border/outer lines */
+         justify-content: space-around;
+      }
+   ```
+   ```css
+      .grid-container > div {
+         background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+         text-align: center;
+         padding: 15px;
+         font-size: 15px;
+         color:rgb(196, 196, 196)
+      }
+   ```
 - [ ] Media Query. At least **one query** based on the screen width
