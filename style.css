@@ -333,6 +333,7 @@ figcaption {
 .flex-container {
   display: flex;
   background-color: #101419;
+  flex-direction: row;
 }
 
 .flex-container > div {

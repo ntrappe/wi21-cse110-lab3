@@ -382,7 +382,22 @@
    }
    ```
 - Flexbox 
-   - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
+   - [x] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
+   ```css
+      .flex-container {
+         display: flex;
+         background-color: #101419;
+         flex-direction: row;
+      }
+   ```
+   ```css
+      .flex-container > div {
+         background-color: #0B0E11;
+         margin: 5px;
+         padding: 10px;
+         font-size: 10px;
+      }
+   ```
 - Grid 
    - [x] Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
   ```css
