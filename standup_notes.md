@@ -405,4 +405,11 @@
          color:rgb(196, 196, 196)
       }
    ```
-- [ ] Media Query. At least **one query** based on the screen width
+- [x] Media Query. At least **one query** based on the screen width
+   ```css
+      @media only screen and (max-width: 600px) {
+         body {
+               background-color: red;
+         }
+      }
+   ```
