@@ -297,9 +297,9 @@ figure > img {
 /* Text beneath figure */
 figcaption {
   font-family: 'Overpass';
-  color: rgb(211, 211, 211);
+  color: rgb(196, 196, 196);
   font-size: 15px;
-  padding: 5px;
+  padding-bottom: 30px;
   display: block;
   text-align: center;
   margin-top: 10px;
@@ -309,16 +309,16 @@ figcaption {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 5px;      /* center dividing lines */
   background-color: #2196F3;
-  padding: 10px;
+  padding: 5px;       /* border/outer lines */
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .item1 {
