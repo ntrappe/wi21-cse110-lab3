@@ -381,8 +381,35 @@
       font-weight: bold;
    }
    ```
-- Flexbox (Links to an external site.)
+- Flexbox 
    - [ ] Must have more than two children within the element that is using flexbox. Must use minimum **three** of the flexbox related attributes.
-- Grid (Links to an external site.)
-   - [ ] Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
-- [ ] Media Query. At least **one query** based on the screen width
+- Grid 
+   - [x] Must have more than two children within the element that is using grid. Must use minimum **three** of the flexbox related attributes.
+  ```css
+      .grid-container {
+         width:fit-content;
+         display: grid;
+         grid-template-columns: repeat(3, 200px [col-start]);
+         grid-gap: 20px;      /* center dividing lines */
+         background-color: #101419;;
+         padding: 5px;       /* border/outer lines */
+         justify-content: space-around;
+      }
+   ```
+   ```css
+      .grid-container > div {
+         background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+         text-align: center;
+         padding: 15px;
+         font-size: 15px;
+         color:rgb(196, 196, 196)
+      }
+   ```
+- [x] Media Query. At least **one query** based on the screen width
+   ```css
+      @media only screen and (max-width: 600px) {
+         body {
+               background-color: red;
+         }
+      }
+   ```
