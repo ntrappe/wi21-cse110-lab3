@@ -8,11 +8,6 @@ body[class="highlight"] {
   background-color: 2EC987;
 }
 
-/* If class BEGINS with https, color link blue */
-a[href^="https"] {
-  color:rgb(62, 179, 252);
-}
-
 /* Title is hidden */
 h1 {
   color: #dac529;
@@ -87,6 +82,7 @@ h5 {
 h6 {
   color: rgb(179, 179, 179);
   font-size: 14px;
+  font-weight: normal;
   padding-bottom: 20px;
 }
 
@@ -113,6 +109,7 @@ section[class="dark"] {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
+  padding-bottom: 0px;
   color: rgb(180, 179, 179);
 }
 
@@ -286,19 +283,42 @@ td {
   padding-bottom: 7px;
 }
 
+/* Adds a border, centers image in a figure */
+figure > img {
+  width: 70%;
+  border: 5px solid rgb(0, 0, 0);
+  padding: 15px;
+  margin: 5px 1px 1px 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text beneath figure */
+figcaption {
+  font-family: 'Overpass';
+  color: rgb(196, 196, 196);
+  font-size: 15px;
+  padding-bottom: 30px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 5px;      /* center dividing lines */
   background-color: #2196F3;
-  padding: 10px;
+  padding: 5px;       /* border/outer lines */
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .item1 {
@@ -306,6 +326,17 @@ td {
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+}
+
+aside {
+  background-color: hsla(0,100%,0%,0.3);    /* sets opacity of black color */
+  padding: 10px 20px 10px 20px;
+  color: rgb(120, 120, 120);
+}
+
+/* If class BEGINS with https, color link blue */
+a[href^="https"] {
+  color:aquamarine;
 }
 
 /* header positioned reltive + slightly up */
